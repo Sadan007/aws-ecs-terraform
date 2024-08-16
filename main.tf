@@ -18,4 +18,5 @@ required_providers {
 
 provider "aws" {
   region = local.region
+
 }
