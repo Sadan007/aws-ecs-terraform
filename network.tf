@@ -2,11 +2,11 @@ module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
   name = local.name
-  cidr = "10.4.0.0/16"
+  cidr = "10.3.0.0/16"
 
   azs             = ["${local.region}a", "${local.region}c"]
-  public_subnets  = ["10.4.11.0/24", "10.4.12.0/24"]
-  private_subnets = ["10.4.1.0/24", "10.4.2.0/24"]
+  public_subnets  = ["10.3.11.0/24", "10.3.12.0/24"]
+  private_subnets = ["10.3.1.0/24", "10.3.2.0/24"]
 
   public_subnet_names  = ["Public Subnet 1a", "Public Subnet 1c"]
   private_subnet_names = ["Private Subnet 1a", "Private Subnet 1c"]
